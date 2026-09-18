@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Fixed
 
+- Fixed skill toggles in `/extensions` taking effect only after restarting; the active session now refreshes its skills when their availability changes ([#12220](https://github.com/can1357/oh-my-pi/issues/12220)).
 - Fixed `omp auth-broker token` and `omp auth-gateway token` exiting silently without creating a token on Windows when no token file exists yet; token and config reads now use `node:fs` instead of `Bun.file`.
 
 ## [18.2.5] - 2026-09-17
